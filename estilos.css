@@ -1,5 +1,9 @@
-body {
-    background-color: #f0f0f0;
+body{
+    background-color: #FFF5E9;
+}
+h1{
+    text-align: center;
+    color: #DFF6FF;
 }
 h1 {
     color: rgb(255,0, 0);
@@ -7,6 +11,11 @@ h1 {
     font-family: 'Segoe UI';
     background-color: black;
 }
+
+h2{
+    color: #e28cc8;
+}
+
 p {
     font-size: large;
     text-align: center;
@@ -33,5 +42,10 @@ ul li {
     background-color: rgb(0,0,255);
 }
 .etiqueta{
-    background-color: blue;
+    background-color: rgb(231, 154, 225);
+}
+.etiquet{
+    border-radius: 10px;
+    background-color: #96ec9d;
+    color: #FFF5E9;
 }
