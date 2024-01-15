@@ -1,0 +1,22 @@
+:root{
+    --gray:#DCDCE5;
+    --orange: #FF872C;
+    --md: 24px;
+}
+
+button {
+    width: 150px;
+    height: 90px;
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: var(--md);
+    background-color: var(--orange);
+}
+
+button:hover {
+    background-color: var(--gray);
+    color: var(--orange);
+}
+
