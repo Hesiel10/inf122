@@ -16,7 +16,7 @@ function TableroC() {
         console.log("array", cuadrosTemp);
         setJugador(jugador === "X"? "O":"X");
     }
-
+    
     return (
         <div className='juego'>
             <h1>Siguiente Jugador: {jugador}</h1>
