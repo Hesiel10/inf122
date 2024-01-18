@@ -1,0 +1,32 @@
+:root{
+    --purple: #663399;
+    --yellow: #f7f467;
+    --white: #ffffff;
+    --white2:#0f23dbf;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: var(--yellow);
+  }
+  h1 {
+    margin: 0;
+    color: var(--white2);
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: 30%;
+    height: 100vh;
+  }
+  button {
+    background-color: var(--purple);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+  }
