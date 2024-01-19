@@ -1,0 +1,30 @@
+:root{
+    --verde: #68e283;
+    --white: #ffffff;
+
+}
+
+.title{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.card-image{
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    
+}
+
+.principal{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+}

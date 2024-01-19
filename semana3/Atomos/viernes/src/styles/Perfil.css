@@ -1,0 +1,35 @@
+:root{
+    --verde: #68e283;
+    --white: #ffffff;
+    --white2: #b5cdd1;
+    --white3: #6dc6d6;
+
+
+}
+
+.btn{
+    background-color: var(--white3);
+    color: var(--white);
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    
+}
+
+.form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.container2{
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+}
