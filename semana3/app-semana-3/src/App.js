@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function App() {
   const [nroClicks, setNumClicks] = useState(0);
+  const [show, setShow] = useState(true);
   const click = () => {
     setNumClicks(nroClicks + 1)
   }
@@ -23,9 +24,10 @@ function App() {
   const sumar1 = () => {
     setNumClicks(nroClicks + 1)
   }
-  const[show, setShow]useState(true);
-  const mostrar = () => ¡setShow
-
+  const mostrar = () => {
+    setShow(!show);
+  }
+  
   return (
     <div className="App">
       <div className="contenedor-principal">
@@ -42,6 +44,7 @@ function App() {
           <div className='contendedor-botones-reiniciar'>
           <Boton className='reiniciar' texto="Reiniciar" esBotonClick={false}
           funcionClick={reiniciar} />
+          <Boton texto="Mostrar/Ocultar" esBotonClick={false} funcionClick={mostrar} />
           </div>
           
         </div>

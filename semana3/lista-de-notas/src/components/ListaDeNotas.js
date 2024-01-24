@@ -19,8 +19,10 @@ function ListaDeNotas(){
     return(
         <div className="contenedor-principal">
             <input
+            className="input"
                 type="text"
-                
+                value = {texto}
+                onChange={(e) = () => }
             />
         </div>
     );
