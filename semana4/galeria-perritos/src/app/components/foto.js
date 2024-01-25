@@ -5,17 +5,24 @@ import { useState, useEffect } from 'react';
 
 export function Foto(){
     const [perrito, setPerrito]=useState("/vercel.svg");
-    const url = "https://dog.ceo/api/breeds/image/random";
+    const [estado, setEstado]=useState("esperando");
+    const [habilidad, setHabilidad]=useState("habilidad");
+    const url = "https://pokeapi.co/api/v2/pokemon/eevee";
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                setPerrito(data.message)
-            })
+                setPerrito(data.sprites.front_default),
+                setEstado(data.species.name),
+                setHabilidad(data.abilities[0].ability.name)
+                });
     }, [])
+    
     return(
         <div className={style.contenedor}>
-            <Image src={perrito} height={350} width={350} />
+            <h1>{estado}</h1>
+            <Image src={perrito} height={250} width={250} />
+            <h1>{habilidad}</h1>
         </div>
     )
 }
