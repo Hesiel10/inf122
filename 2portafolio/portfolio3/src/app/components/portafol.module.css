@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+    margin: 0;
+    padding: 0;
+   
 }
 
 .profile {
@@ -14,9 +15,7 @@
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    
 }
-
 
 .profile h1 {
     font-size: var(--lg);
@@ -48,6 +47,7 @@
     border-width: 5px;
     border-style: solid;
     padding: 7px;
+   
     
 }
 
@@ -175,6 +175,23 @@
     line-height: normal;
 }
 
+.tabsBackgroundTtemText{
+    color: var(--texto);
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: normal;
+    color: var(--primary-background);
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-secundario);
+
+}
+
 .tabs {
     margin: 32px;
     display: flex;
@@ -194,9 +211,10 @@
     background: var(--color-secundario);
 }
 
-.tabsBackgroundItem active {
+.tabsBackgroundItem.active {
     border-radius: 10px;
     background: var(--quinto-color);
+    
 
 }
 
@@ -208,7 +226,7 @@
     text-align: center;
 }
 
-.projectc {
+.projectContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -233,9 +251,16 @@
     object-fit: cover;
     object-position: center center;
 }
+.image {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center center;
+}
 
 .contentCardImage .image .grayscale {
     filter: grayscale(100%);
+    
 }
 
 .contentCardImage .contentCardImageOverlay {
@@ -262,19 +287,41 @@
     display: none;
 }
 
-.contentCardImage .contentCardImageOverlay:hover+.contentCardImageDetail {
+
+.contentCardImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentCardImageOverlay:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentCardImageDetail {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contentCardImageDetail .title {
+
+.contentCardImageDetail {
+    text-align: center;
+    font-family: Poppins;
+    font-size: var(--sm);
+}
+.title {
     text-align: center;
     font-family: Poppins;
     font-size: var(--sm);
 }
 
-.contentCardImageDetail .detail {
+.contentCardImageDetail  {
+    text-align: center;
+    font-family: Poppins;
+    font-size: var(--xs);
+}
+.detail {
     text-align: center;
     font-family: Poppins;
     font-size: var(--xs);
@@ -287,6 +334,7 @@
     border-radius: 50%;
     border: 0px;
 }
+
 
 /* --- Responsive ---  */
 @media(max-width: 768px) {
@@ -395,7 +443,7 @@
         font-weight: 300;
     }
 
-    .projectc {
+    .projectContainer {
         grid-template-columns: 1fr;
     }
 }

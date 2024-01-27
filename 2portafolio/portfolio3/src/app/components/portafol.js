@@ -18,9 +18,6 @@ import twitter from './icons/twitter.svg';
 import youtube from './icons/youtube.svg';
 
 function Portafolio() {
-    useEffect(() => {
-
-    }, []);
     function download() {
         alert("Downloading Document");
     }
@@ -82,57 +79,54 @@ function Portafolio() {
                 </div>
 
                 <div className={styles.tabs}>
-                    <button className="tabsBackgroundItem active">
-                        <p className={styles.tabsBackgroundItemText}>Portfolio</p>
+                    <button className={styles.tabsBackgroundItem} active>
+                        <p className={styles.tabsBackgroundTtemText}>Portfolio</p>
                     </button>
                     <button className={styles.tabsBackgroundItem}>
                         <p className={styles.tabsBackgroundItemText}>Skills</p>
                     </button>
                 </div>
 
-                <div className={styles.projectc}>
+                <div className={styles.projectContainer}>
                     <div className={styles.contentCardImage}>
-                        <Image className={styles.image} src={hero} width={360} height={360}
+                        <Image className={styles.image} src={hero}
                             alt="Foto" />
                         <div className={styles.contentCardImageOverlay}></div>
                         <div className={styles.contentCardImageDetail}>
                             <p className={styles.title}>SmarterTrading411</p>
                             <p className={styles.detail}>Landing page of SmarterTrading411 created using WordPress</p>
                             <button className={styles.btn}>
-                                <Image src={link} alt="youtube" width={36} height={36} />
+                                <Image src={link} alt="youtube"  />
                             </button>
                         </div>
 
                         <div className={styles.contentCardImage}>
-                            <Image className={styles.image} src={bussines} width={36} height={36}
+                            <Image className={styles.image} src={bussines} w alt="Business Man" />
+                            <div className={styles.contentCardImageOverlay}></div>
+                        </div>
+
+                        <div className={styles.contentCardImage}>
+                            <Image className={styles.image} src={wall} alt="Wall Picture" />
+                            <div className={styles.contentCardImageOverlay}></div>
+                        </div>
+
+
+                        <div className={styles.contentCardImage}>
+                            <Image className={styles.image} src={kitchen}
                                 alt="Foto" />
                             <div className={styles.contentCardImageOverlay}></div>
                         </div>
 
 
                         <div className={styles.contentCardImage}>
-                            <Image className="image" src={wall} width={36} height={36}
+                            <Image className={styles.image} src={mobile} 
                                 alt="Foto" />
                             <div className={styles.contentCardImageOverlay}></div>
                         </div>
 
 
                         <div className={styles.contentCardImage}>
-                            <Image className="image" src={kitchen} width={36} height={36}
-                                alt="Foto" />
-                            <div className={styles.contentCardImageOverlay}></div>
-                        </div>
-
-
-                        <div className={styles.contentCardImage}>
-                            <Image className={styles.image} src={mobile} width={36} height={36}
-                                alt="Foto" />
-                            <div className={styles.contentCardImageOverlay}></div>
-                        </div>
-
-
-                        <div className={styles.contentCardImage}>
-                            <Image className={styles.image} src={issima} width={36} height={36}
+                            <Image className={styles.image} src={issima} 
                                 alt="Foto" />
                             <div className={styles.contentCardImageOverlay}></div>
                         </div>
